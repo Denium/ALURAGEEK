@@ -1,0 +1,22 @@
+{
+  "produtos": [
+    {
+      "nome": "Game Boy Classic",
+      "preco": "R$60.00",
+      "imagem": "./img/GameBoyClassic.svg",
+      "id": "2"
+    },
+    {
+      "nome": "Caneca Stormtrooper",
+      "preco": "R$60.00",
+      "imagem": "./img/Stormtooper.svg",
+      "id": "3"
+    },
+    {
+      "id": "3c48",
+      "nome": "Sabre de luz",
+      "preco": "R$200.00",
+      "imagem": "img/SabreDeLuz.png"
+    }
+  ]
+}

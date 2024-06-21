@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>AluraGeek</title>
+</head>
+
+<body class="body">
+    <header class="header"><img class="logo" src="./img/Logo.png" alt="Logo Alura"></header>
+    <main class="main">
+        <section class="section__produtos"> 
+            <h1 class="titulo">MEUS PRODUTOS</h1>
+            <ul class="produtos" data-lista data-produtos>
+             
+                <!-- <span class="mensagem__vazio">NENHUM PRODUTO FOI ADICIONADO.</span>  -->
+                  <div class="produtos_bloco">
+                    <img class="produtos_imagem" src="img/GameBoyClassic.svg">
+                    <h3 class="produtos_descricao">Game Boy Classic</h3>
+                    <div class="produtos_barra">
+                        <p class="produtos_preco">R$99,00</p>
+                        <button class="produtos_descartar" data-id>
+                            <img src="img/delete.png" alt="Ícone de lixeira">
+                        </button>
+                    </div>
+                </div> 
+            </ul>
+        </section>
+        <section class="section__form">
+            <h1 class="titulo">ADICIONAR <br>PRODUTO</h1>
+            <form class="formulario" data-formulario onsubmit="">
+                <input name="nome" class="campo__escrita" type="text" placeholder="Nome..." required minlength="4"
+                    data-nome />
+                <input name="preco" class="campo__escrita" type="text" placeholder="Valor..." required minlength="4"
+                    data-preco />
+                <input name="imagem" class="campo__escrita" type="file" class="imagem" required placeholder="Imagem..."
+                    id='imagem' data-imagem />
+                <span class="mensagem-erro"></span>
+                <div class="container__button">
+                    <button class="button__submit" type="submit">Salvar</button>
+                    <button class="button__limpar" type="reset">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <img class="logo" src="./img/Logo.png" alt="Logo Alura">
+        <p>DESENVOLVIDO POR VALDENIO COSME</p>
+        <p>ALURA LATAM</p>
+        <p>ORACLE NEXT ONE</p>
+    </footer>
+    <script src="./js/produtos.js" type="module"></script>
+    <script src="./js/criaProdutos.js" type="module"></script>
+    <script src="./js/mostrarProdutos.js" type="module"></script>
+</body>
+
+</html>
