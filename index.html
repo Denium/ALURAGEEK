@@ -23,7 +23,7 @@
             <ul class="produtos" data-lista data-produtos>
              
                 <!-- <span class="mensagem__vazio">NENHUM PRODUTO FOI ADICIONADO.</span>  -->
-                  <div class="produtos_bloco">
+                  <!-- <div class="produtos_bloco">
                     <img class="produtos_imagem" src="img/GameBoyClassic.svg">
                     <h3 class="produtos_descricao">Game Boy Classic</h3>
                     <div class="produtos_barra">
@@ -32,22 +32,22 @@
                             <img src="img/delete.png" alt="Ícone de lixeira">
                         </button>
                     </div>
-                </div> 
+                </div>  -->
             </ul>
         </section>
         <section class="section__form">
             <h1 class="titulo">ADICIONAR <br>PRODUTO</h1>
-            <form class="formulario" data-formulario onsubmit="">
+            <form id="addProdutoFormulario" class="formulario" data-formulario>
                 <input name="nome" class="campo__escrita" type="text" placeholder="Nome..." required minlength="4"
                     data-nome />
                 <input name="preco" class="campo__escrita" type="text" placeholder="Valor..." required minlength="4"
                     data-preco />
-                <input name="imagem" class="campo__escrita" type="file" class="imagem" required placeholder="Imagem..."
+                <input name="imagem" class="campo__escrita" type="text" class="imagem" required placeholder="URL da imagem... "
                     id='imagem' data-imagem />
                 <span class="mensagem-erro"></span>
                 <div class="container__button">
                     <button class="button__submit" type="submit">Salvar</button>
-                    <button class="button__limpar" type="reset">Limpar</button>
+                    <button id="limpar_btn" class="button__limpar" type="button" data-limpar>Limpar</button>
                 </div>
             </form>
         </section>

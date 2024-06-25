@@ -2,21 +2,39 @@
   "produtos": [
     {
       "nome": "Game Boy Classic",
-      "preco": "R$60.00",
+      "preco": "R$90.00",
       "imagem": "./img/GameBoyClassic.svg",
-      "id": "2"
+      "id": "4"
     },
     {
-      "nome": "Caneca Stormtrooper",
-      "preco": "R$60.00",
-      "imagem": "./img/Stormtooper.svg",
-      "id": "3"
-    },
-    {
-      "id": "3c48",
+      "id": "9500",
       "nome": "Sabre de luz",
-      "preco": "R$200.00",
+      "preco": "R$ 200.00",
       "imagem": "img/SabreDeLuz.png"
+    },
+    {
+      "id": "d6f6",
+      "nome": "Sabre de luz",
+      "preco": "R$ 600,00",
+      "imagem": "https://brincamundo.com.br/wp-content/uploads/2023/04/Sabre-de-Luz-7-cores-Led-capa-1.webp"
+    },
+    {
+      "id": "2a0c",
+      "nome": "StormTrooper boneco",
+      "preco": "R$ 50,00",
+      "imagem": "https://www.looper.com/img/gallery/ai-reimagines-stormtrooper-costumes-in-different-countries-the-results-are-awesome/intro-1705684922.jpg"
+    },
+    {
+      "id": "e67b",
+      "nome": "StormTrooper boneco",
+      "preco": "R$ 150,00",
+      "imagem": "https://c1-ebgames.eb-cdn.com.au/merchandising/images/packshots/d15879862c2b4c3bad85d8a864b62a2d_Original.jpg"
+    },
+    {
+      "id": "a418",
+      "nome": "Game Boy Classic",
+      "preco": "R$ 50,00",
+      "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Nintendo-Game-Boy-Advance-Purple-FL.jpg/640px-Nintendo-Game-Boy-Advance-Purple-FL.jpg"
     }
   ]
 }

@@ -128,6 +128,7 @@ button.botao__delete:hover {
 
 .produtos_imagem {
   width: 11rem;
+  height: 11rem;
   border-radius: 0.5px;
   object-fit: cover;
   padding-bottom: 16px;

@@ -17,7 +17,7 @@ async function criarProduto(nome,preco,imagem){
     body: JSON.stringify({
       nome: nome,
       preco: `R$ ${preco}`,
-      imagem: imagem
+      imagem: imagem,
     })
   });
   const produtos = produtosData.json();
@@ -39,6 +39,7 @@ async function deletarProdutos(id) {
       throw error;
   }
 }
+
 
 export const produtos = {
   obterProdutos,
