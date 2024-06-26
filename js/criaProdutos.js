@@ -11,29 +11,25 @@ function limparForm() {
   })
 }
 
-document.getElementById('addProdutoFormulario').addEventListener('submit', async function (event) {
-  event.preventDefault();
 
-  async function criaCard(evento) {
-    evento.preventDefault();
+async function criaCard(evento) {
+  evento.preventDefault();
 
-    const nome = document.querySelector('[data-nome]').value;
-    const preco = document.querySelector('[data-preco]').value;
-    const imagem = document.querySelector('[data-imagem]').value;
-    try {
-      await produtos.criarProduto(nome, preco, imagem);
-    } catch (error) {
-      window.location.reload();
-    }
-   
-    formulario.reset();
-
-    alert("Produto cadastrado com sucesso!");
+  const nome = document.querySelector('[data-nome]').value;
+  const preco = document.querySelector('[data-preco]').value;
+  const imagem = document.querySelector('[data-imagem]').value;
+  try {
+    await produtos.criarProduto(nome, preco, imagem);
+  } catch (error) {
+    window.location.reload();
   }
 
-  formulario.addEventListener('submit', evento => criaCard(evento));
- 
-})
+  formulario.reset();
+
+  alert("Produto cadastrado com sucesso!");
+}
+
+formulario.addEventListener('submit', evento => criaCard(evento));
 limparForm();
 
 
