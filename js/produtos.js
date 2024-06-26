@@ -2,14 +2,14 @@ async function obterProdutos() {
   const configFetch = {
     method: "GET",
 }
-  const produtosData = await fetch("http://localhost:3000/produtos" , configFetch);
+  const produtosData = await fetch("https://json-server-sigma-seven.vercel.app/products" , configFetch);
   const produtos = await produtosData.json();
-
+//https://json-server-sigma-seven.vercel.app/
   return produtos;
 }
 
 async function criarProduto(nome,preco,imagem){
-  const produtosData = await fetch("http://localhost:3000/produtos", {
+  const produtosData = await fetch("https://json-server-sigma-seven.vercel.app/products", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -27,7 +27,7 @@ async function criarProduto(nome,preco,imagem){
 
 async function deletarProdutos(id) {
   try {
-      const response = await fetch(`http://localhost:3000/produtos/${id}`,{
+      const response = await fetch(`https://json-server-sigma-seven.vercel.app/products/${id}`,{
           method: 'DELETE',
       });
       if (!response.ok) {
