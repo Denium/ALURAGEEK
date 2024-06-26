@@ -4,7 +4,7 @@ async function obterProdutos() {
 }
   const produtosData = await fetch("https://json-server-sigma-seven.vercel.app/products" , configFetch);
   const produtos = await produtosData.json();
-//https://json-server-sigma-seven.vercel.app/
+  
   return produtos;
 }
 
@@ -20,10 +20,9 @@ async function criarProduto(nome,preco,imagem){
       imagem: imagem,
     })
   });
-  const produtos = produtosData.json();
+  const produtos = await produtosData.json();
   return produtos;
 }
-
 
 async function deletarProdutos(id) {
   try {

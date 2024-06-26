@@ -23,12 +23,15 @@ export default function constroiCard(nome, preco, imagem, id) {
 
   btnsDeletar.addEventListener("click", async (evento) => {
     evento.preventDefault();
-    await produtos.deletarProdutos(id);
+    try {
+      await produtos.deletarProdutos(id);
+    } catch {
+      window.location.reload();
+    }
   });
 
   return produtoLi;
 }
-
 async function escreverNaTela() {
   try {
     const listaApi = await produtos.obterProdutos();
@@ -49,3 +52,7 @@ async function escreverNaTela() {
 }
 
 escreverNaTela();
+
+export const mostrarProdutos = {
+  escreverNaTela
+}
